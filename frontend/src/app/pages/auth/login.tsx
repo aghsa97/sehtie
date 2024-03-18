@@ -1,6 +1,8 @@
 function LoginPage() {
     return (
-        <div>LoginPage</div>
+        <div className="p-12 border rounded-md">
+            Login form
+        </div>
     )
 }
 
