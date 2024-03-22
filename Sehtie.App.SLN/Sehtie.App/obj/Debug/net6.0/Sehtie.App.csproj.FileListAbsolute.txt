@@ -1,0 +1,146 @@
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\appsettings.json
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.App.exe
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.App.deps.json
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.App.runtimeconfig.json
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.App.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.App.pdb
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.csproj.AssemblyReference.cache
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.AssemblyInfoInputs.cache
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.AssemblyInfo.cs
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.csproj.CoreCompileInputs.cache
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\scopedcss\bundle\Sehtie.App.styles.css
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.csproj.CopyComplete
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\refint\Sehtie.App.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.pdb
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.genruntimeconfig.cache
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\ref\Sehtie.App.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Humanizer.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.Core.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.Repository.dll
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.Core.pdb
+C:\Users\hitech\source\repos\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.Repository.pdb
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\appsettings.Development.json
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\appsettings.json
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.App.exe
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.App.deps.json
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.App.runtimeconfig.json
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.App.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.App.pdb
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Humanizer.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Drawing.Common.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Runtime.Caching.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Security.Permissions.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\System.Windows.Extensions.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.Core.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.Repository.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.Core.pdb
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\Sehtie.Repository.pdb
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.csproj.AssemblyReference.cache
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.GeneratedMSBuildEditorConfig.editorconfig
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.AssemblyInfoInputs.cache
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.AssemblyInfo.cs
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.csproj.CoreCompileInputs.cache
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.MvcApplicationPartsAssemblyInfo.cs
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.MvcApplicationPartsAssemblyInfo.cache
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\staticwebassets.build.json
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\staticwebassets.development.json
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\scopedcss\bundle\Sehtie.App.styles.css
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.csproj.CopyComplete
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\refint\Sehtie.App.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.pdb
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\Sehtie.App.genruntimeconfig.cache
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\obj\Debug\net6.0\ref\Sehtie.App.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\AutoMapper.dll
+F:\CommandLines\Cmder Full\sehtie\Sehtie.App.SLN\Sehtie.App\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
