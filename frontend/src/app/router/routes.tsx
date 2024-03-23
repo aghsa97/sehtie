@@ -3,7 +3,7 @@ import { RouteObject, createBrowserRouter } from 'react-router-dom'
 import HomeLayout from '../layouts/Home'
 import AuthLayout from '../layouts/Auth'
 
-import HomePage from '../pages/home'
+import HomePage from '../pages/home/home'
 import LoginPage from '../pages/auth/login'
 import RegisterPage from '../pages/auth/register'
 

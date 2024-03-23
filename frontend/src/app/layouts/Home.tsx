@@ -1,15 +1,13 @@
 import { Outlet } from "react-router-dom"
 
 import Header from "@/components/layout/header"
-import NavBar from "@/components/layout/nav-bar"
 
 function HomeLayout() {
 
   return (
-    <div className='h-screen flex flex-col'>
+    <div className='flex flex-col bg-[#01200f]'>
       <Header />
-      <NavBar />
-      <div className='w-full max-w-screen-xl mx-auto flex-1 pt-16 '>
+      <div className='flex-1 pt-32'>
         <Outlet />
       </div>
     </div >
