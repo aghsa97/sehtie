@@ -8,7 +8,7 @@ using Sehtie.Data;
 
 #nullable disable
 
-namespace Sehtie.Repository.Data.Migrations
+namespace Sehtie.Repository.Migrations
 {
     [DbContext(typeof(AppDBContext))]
     partial class AppDBContextModelSnapshot : ModelSnapshot
@@ -22,28 +22,10 @@ namespace Sehtie.Repository.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("Sehtie.Core.Entities.DoctorPatient", b =>
-                {
-                    b.Property<string>("DoctorId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("PatientId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("DoctorId", "PatientId");
-
-                    b.HasIndex("PatientId");
-
-                    b.ToTable("DoctorsPatients", (string)null);
-                });
-
             modelBuilder.Entity("Sehtie.Data.Entities.Booking", b =>
                 {
-                    b.Property<int>("No")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("No"), 1L, 1);
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
@@ -52,40 +34,23 @@ namespace Sehtie.Repository.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("No")
+                        .HasColumnType("int");
+
                     b.Property<string>("PatientId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("No");
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("DoctorId");
 
                     b.HasIndex("PatientId");
 
                     b.ToTable("Bookings", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            No = 1,
-                            Date = new DateTime(2024, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DoctorId = "do1",
-                            PatientId = "pat1"
-                        },
-                        new
-                        {
-                            No = 2,
-                            Date = new DateTime(2024, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DoctorId = "do1",
-                            PatientId = "pat1"
-                        },
-                        new
-                        {
-                            No = 3,
-                            Date = new DateTime(2024, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DoctorId = "do1",
-                            PatientId = "pat1"
-                        });
                 });
 
             modelBuilder.Entity("Sehtie.Data.Entities.Doctor", b =>
@@ -112,6 +77,11 @@ namespace Sehtie.Repository.Data.Migrations
                         .HasColumnType("bit")
                         .HasDefaultValue(false);
 
+                    b.Property<string>("Passowrd")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
                     b.Property<string>("PersonalNumber")
                         .IsRequired()
                         .HasMaxLength(15)
@@ -125,28 +95,6 @@ namespace Sehtie.Repository.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Doctors", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "do1",
-                            Category = "ophthalmologist",
-                            DisplayName = "do1Ahmed",
-                            Email = "do1Ahmed@gmail.com",
-                            IsDeleted = false,
-                            PersonalNumber = "N129841239",
-                            PhoneNumber = "963931243567"
-                        },
-                        new
-                        {
-                            Id = "do2",
-                            Category = "cardiologist",
-                            DisplayName = "do2Abdulrahman",
-                            Email = "do2Abdulrahman@gmail.com",
-                            IsDeleted = false,
-                            PersonalNumber = "N129841238",
-                            PhoneNumber = "963923678945"
-                        });
                 });
 
             modelBuilder.Entity("Sehtie.Data.Entities.Patient", b =>
@@ -169,6 +117,11 @@ namespace Sehtie.Repository.Data.Migrations
                         .HasColumnType("bit")
                         .HasDefaultValue(false);
 
+                    b.Property<string>("Passowrd")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
                     b.Property<string>("PersonalNumber")
                         .IsRequired()
                         .HasMaxLength(15)
@@ -182,26 +135,6 @@ namespace Sehtie.Repository.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Patients", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "pat1",
-                            DisplayName = "pat1Ahmed",
-                            Email = "do1Ahmed@gmail.com",
-                            IsDeleted = false,
-                            PersonalNumber = "N129841249",
-                            PhoneNumber = "963931245567"
-                        },
-                        new
-                        {
-                            Id = "pat2",
-                            DisplayName = "pat2Abdulrahman",
-                            Email = "pat2Abdulrahman@gmail.com",
-                            IsDeleted = false,
-                            PersonalNumber = "N129841248",
-                            PhoneNumber = "963953678945"
-                        });
                 });
 
             modelBuilder.Entity("Sehtie.Data.Entities.Recipe", b =>
@@ -218,6 +151,10 @@ namespace Sehtie.Repository.Data.Migrations
                     b.Property<DateTime>("DateOfIssue")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Description")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
                     b.Property<string>("DoctorId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
@@ -233,26 +170,12 @@ namespace Sehtie.Repository.Data.Migrations
                     b.HasIndex("PatientId");
 
                     b.ToTable("Recipes", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "rec01",
-                            ActiveIngredient = false,
-                            AppliesTo = new DateTime(2024, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DateOfIssue = new DateTime(2024, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DoctorId = "do1",
-                            PatientId = "pat1"
-                        });
                 });
 
             modelBuilder.Entity("Sehtie.Data.Entities.Report", b =>
                 {
-                    b.Property<int>("No")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("No"), 1L, 1);
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
@@ -269,42 +192,13 @@ namespace Sehtie.Repository.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.HasKey("No");
+                    b.HasKey("Id");
 
                     b.HasIndex("DoctorId");
 
                     b.HasIndex("PatientId");
 
                     b.ToTable("Reports", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            No = 1,
-                            Date = new DateTime(2024, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Diagnosis = "something in her eyes",
-                            DoctorId = "do1",
-                            PatientId = "pat1"
-                        });
-                });
-
-            modelBuilder.Entity("Sehtie.Core.Entities.DoctorPatient", b =>
-                {
-                    b.HasOne("Sehtie.Data.Entities.Doctor", "Doctor")
-                        .WithMany("DoctorPatients")
-                        .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Sehtie.Data.Entities.Patient", "Patient")
-                        .WithMany("DoctorPatients")
-                        .HasForeignKey("PatientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Doctor");
-
-                    b.Navigation("Patient");
                 });
 
             modelBuilder.Entity("Sehtie.Data.Entities.Booking", b =>
@@ -368,8 +262,6 @@ namespace Sehtie.Repository.Data.Migrations
                 {
                     b.Navigation("Bookings");
 
-                    b.Navigation("DoctorPatients");
-
                     b.Navigation("Recipes");
 
                     b.Navigation("Reports");
@@ -378,8 +270,6 @@ namespace Sehtie.Repository.Data.Migrations
             modelBuilder.Entity("Sehtie.Data.Entities.Patient", b =>
                 {
                     b.Navigation("Bookings");
-
-                    b.Navigation("DoctorPatients");
 
                     b.Navigation("Recipes");
 

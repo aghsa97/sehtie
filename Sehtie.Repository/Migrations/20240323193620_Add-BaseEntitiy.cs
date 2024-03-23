@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Sehtie.Repository.Data.Migrations
+namespace Sehtie.Repository.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class AddBaseEntitiy : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,6 +16,7 @@ namespace Sehtie.Repository.Data.Migrations
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Category = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PersonalNumber = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
+                    Passowrd = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     DisplayName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
@@ -32,6 +33,7 @@ namespace Sehtie.Repository.Data.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     PersonalNumber = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
+                    Passowrd = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
                     DisplayName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     PhoneNumber = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
@@ -46,15 +48,16 @@ namespace Sehtie.Repository.Data.Migrations
                 name: "Bookings",
                 columns: table => new
                 {
-                    No = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    No = table.Column<int>(type: "int", nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false),
                     DoctorId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     PatientId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Bookings", x => x.No);
+                    table.PrimaryKey("PK_Bookings", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Bookings_Doctors_DoctorId",
                         column: x => x.DoctorId,
@@ -77,6 +80,7 @@ namespace Sehtie.Repository.Data.Migrations
                     DateOfIssue = table.Column<DateTime>(type: "datetime2", nullable: false),
                     AppliesTo = table.Column<DateTime>(type: "datetime2", nullable: false),
                     ActiveIngredient = table.Column<bool>(type: "bit", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: true),
                     DoctorId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     PatientId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
@@ -101,8 +105,7 @@ namespace Sehtie.Repository.Data.Migrations
                 name: "Reports",
                 columns: table => new
                 {
-                    No = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Diagnosis = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Date = table.Column<DateTime>(type: "datetime2", nullable: false),
                     DoctorId = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -110,7 +113,7 @@ namespace Sehtie.Repository.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Reports", x => x.No);
+                    table.PrimaryKey("PK_Reports", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Reports_Doctors_DoctorId",
                         column: x => x.DoctorId,
@@ -124,44 +127,6 @@ namespace Sehtie.Repository.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
-
-            migrationBuilder.InsertData(
-                table: "Doctors",
-                columns: new[] { "Id", "Category", "DisplayName", "Email", "PersonalNumber", "PhoneNumber" },
-                values: new object[,]
-                {
-                    { "do1", "ophthalmologist", "do1Ahmed", "do1Ahmed@gmail.com", "N129841239", "963931243567" },
-                    { "do2", "cardiologist", "do2Abdulrahman", "do2Abdulrahman@gmail.com", "N129841238", "963923678945" }
-                });
-
-            migrationBuilder.InsertData(
-                table: "Patients",
-                columns: new[] { "Id", "DisplayName", "Email", "PersonalNumber", "PhoneNumber" },
-                values: new object[,]
-                {
-                    { "pat1", "pat1Ahmed", "do1Ahmed@gmail.com", "N129841249", "963931245567" },
-                    { "pat2", "pat2Abdulrahman", "pat2Abdulrahman@gmail.com", "N129841248", "963953678945" }
-                });
-
-            migrationBuilder.InsertData(
-                table: "Bookings",
-                columns: new[] { "No", "Date", "DoctorId", "PatientId" },
-                values: new object[,]
-                {
-                    { 1, new DateTime(2024, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "do1", "pat1" },
-                    { 2, new DateTime(2024, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "do1", "pat1" },
-                    { 3, new DateTime(2024, 5, 7, 0, 0, 0, 0, DateTimeKind.Unspecified), "do1", "pat1" }
-                });
-
-            migrationBuilder.InsertData(
-                table: "Recipes",
-                columns: new[] { "Id", "ActiveIngredient", "AppliesTo", "DateOfIssue", "DoctorId", "PatientId" },
-                values: new object[] { "rec01", false, new DateTime(2024, 2, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2024, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "do1", "pat1" });
-
-            migrationBuilder.InsertData(
-                table: "Reports",
-                columns: new[] { "No", "Date", "Diagnosis", "DoctorId", "PatientId" },
-                values: new object[] { 1, new DateTime(2024, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "something in her eyes", "do1", "pat1" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Bookings_DoctorId",
