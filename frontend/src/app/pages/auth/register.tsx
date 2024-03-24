@@ -13,7 +13,11 @@ function RegisterPage() {
 
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault()
-        navigate('/dashboard')
+        if (user === 'patient') {
+            navigate('/dashboard/patient?page=medical records')
+            return
+        }
+        navigate('/dashboard/doctor?page=appointments')
     }
 
     if (user === 'patient') {
@@ -48,7 +52,7 @@ function RegisterPage() {
                         Already have an account?
                     </p>
                     <Button asChild variant={'link'} className="px-1.5">
-                        <Link to="/login">Login</Link>
+                        <Link to="/auth/login">Login</Link>
                     </Button>
                 </div>
             </div>
@@ -90,7 +94,7 @@ function RegisterPage() {
                         Already have an account?
                     </p>
                     <Button asChild variant={'link'} className="px-1.5">
-                        <Link to="/login">Login</Link>
+                        <Link to="/auth/login">Login</Link>
                     </Button>
                 </div>
             </div>
@@ -130,7 +134,7 @@ function RegisterPage() {
                     Already have an account?
                 </p>
                 <Button asChild variant={'link'} className="px-1.5">
-                    <Link to="/login">Login</Link>
+                    <Link to="/auth/login">Login</Link>
                 </Button>
             </div>
         </div>

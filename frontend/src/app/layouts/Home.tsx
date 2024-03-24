@@ -5,7 +5,7 @@ import Header from "@/components/layout/header"
 function HomeLayout() {
 
   return (
-    <div className='flex flex-col bg-[#01200f]'>
+    <div className='flex flex-col bg-green-main'>
       <Header />
       <div className='flex-1 pt-32'>
         <Outlet />

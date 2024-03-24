@@ -14,7 +14,7 @@ function HomePage() {
                         <p className="text-lg text-muted-foreground">Empowering Patients and Doctors for Seamless Healthcare Interactions.</p>
                     </div>
                     <Button asChild className="rounded-full" size={'lg'}>
-                        <Link to="/register">Get Started</Link>
+                        <Link to="/auth/register">Get Started</Link>
                     </Button>
                 </div>
                 <img src="/hero.png" alt="hero" />
@@ -61,7 +61,7 @@ function HomePage() {
                             </li>
                         </ul>
                         <Button asChild className="rounded-full mt-12 bg-green-main hover:bg-green-main/95 text-white" size={'lg'}>
-                            <Link to="/register">Start your treatment</Link>
+                            <Link to="/auth/register?user=patient">Start your treatment</Link>
                         </Button>
                     </div>
                     <div className="w-1/2 p-24 pb-0 flex flex-col justify-center items-start gap-6">
@@ -87,7 +87,7 @@ function HomePage() {
                             </li>
                         </ul>
                         <Button asChild className="rounded-full mt-12 bg-green-main hover:bg-green-main/95 text-white" size={'lg'}>
-                            <Link to="/register">Find your Patient</Link>
+                            <Link to="/auth/register?user=doctor">Find your Patient</Link>
                         </Button>
                     </div>
                 </div>
@@ -106,16 +106,16 @@ function HomePage() {
                     </div>
                     <div className="flex flex-col gap-9">
                         <h3 className="text-xl tracking-tight font-medium">
-                            <h3>Soultions</h3>
+                            Soultions
                         </h3>
                         <ul className="flex flex-col gap-3">
-                            <Link to="/" className="text-muted-foreground transition hover:text-foreground">For Doctors</Link>
-                            <Link to="/" className="text-muted-foreground transition hover:text-foreground">For Patients</Link>
+                            <Link to="/" className="text-muted-foreground transition hover:text-muted">For Doctors</Link>
+                            <Link to="/" className="text-muted-foreground transition hover:text-muted">For Patients</Link>
                         </ul>
                     </div>
                     <div className="flex flex-col gap-9">
                         <h3 className="text-xl tracking-tight font-medium">
-                            <h3>Made By</h3>
+                            Made By
                         </h3>
                         <div className="flex gap-3">
                             <img src="/mohammed.jpeg" alt="" className="size-12 rounded-full object-cover" />

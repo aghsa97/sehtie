@@ -10,7 +10,7 @@ function LoginPage() {
 
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault()
-        navigate('/dashboard')
+        navigate('/dashboard/patient?page=medical records')
     }
     return (
         <div className="p-12 text-muted">
@@ -42,7 +42,7 @@ function LoginPage() {
             <div className="flex items-center justify-center mt-6">
                 <p className="text-muted-foreground font-medium">Don't have an account?</p>
                 <Button variant={'link'} className="px-1.5">
-                    <Link to="/register">Create an account</Link>
+                    <Link to="/auth/register">Create an account</Link>
                 </Button>
             </div>
         </div>

@@ -15,7 +15,7 @@ function Header() {
             </div>
             <div className="flex items-center justify-center space-x-3">
                 <Button asChild className="rounded-full" size={'lg'}>
-                    <Link to="/login">Login</Link>
+                    <Link to="/auth/login">Login</Link>
                 </Button>
             </div>
         </div>
