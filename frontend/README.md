@@ -17,3 +17,15 @@ yarn
 
 yarn dev
 ```
+
+## How to build
+
+```bash
+npm run build
+```
+
+or with yarn
+
+```bash
+yarn build
+```
