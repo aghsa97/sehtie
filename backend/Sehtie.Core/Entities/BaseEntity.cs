@@ -1,5 +1,4 @@
-﻿
-namespace Sehtie.Core.Entities
+﻿namespace Sehtie.Core.Entities
 {
     public class BaseEntity
     {

@@ -13,24 +13,22 @@ namespace Sehtie.Repository.Repository
         {
             _dBContext = dBContext;
         }
-        public async Task Add(Doctor id)
-        => await _dBContext.AddAsync(id);
-
-        public void Delete(Doctor id)
-        => _dBContext.Remove(id);
+        public async Task Add(Doctor doctor)
+        {
+        _dBContext.Doctors.Add(doctor);
+        await _dBContext.SaveChangesAsync();
+        return;
+        }
 
         public async Task<IEnumerable<Doctor>> GetAllAsync()
         {
             return await _dBContext.Set<Doctor>().ToListAsync();
         }
 
-        public async Task<Doctor> GetAsync(Doctor id)
+        public async Task<Doctor> GetByEmail(string email)
         {
-            return await _dBContext.Set<Doctor>().FindAsync(id);
+            return await _dBContext.Set<Doctor>().FirstOrDefaultAsync(p => p.Email == email);
         }
-
-        public void Update(Doctor id)
-        => _dBContext.Update(id);
         
     }
 }
