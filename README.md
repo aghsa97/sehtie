@@ -47,7 +47,7 @@ dotnet run
 
 7. The database will be created on Microsoft SQL Server, so make sure you have it installed and running.
 
-### If you are using macOS with Apple Silicon, you can't run the database directly on your machine because Microsoft SQL Server doesn't support Apple Silicon. You can use Docker to run the database.
+#### If you are using macOS with Apple Silicon, you can't run the database directly on your machine because Microsoft SQL Server doesn't support Apple Silicon. You can use Docker to run the database.
 
 8. To run the database on macOS, you can use Docker.
 
@@ -56,7 +56,7 @@ docker pull mcr.microsoft.com/mssql/server:2022-latest
 docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=DB_Password' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2022-latest
 ```
 
-### if you are facing a problem running the image on docker you need to enable `Use Rosetta for x86/amd64 emulation on Apple Silicon` from the docker preferences -> General.
+if you are facing a problem running the image on docker you need to enable `Use Rosetta for x86/amd64 emulation on Apple Silicon` from the docker preferences -> General.
 
 9. Update the connection string in the `appsettings.json` file.
 
