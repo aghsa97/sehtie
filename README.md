@@ -10,8 +10,8 @@ Sehtie is a healthcare web application inspired by the COVID-19 pandemic. The pa
 - **Doctor Profile**: Healthcare professionals can view and edit their profiles.
 - **Appointment Booking**: Users can book appointments with healthcare professionals.
 - **Appointment Management**: Healthcare professionals can manage their appointments.
-- **Medical Records**: Patients can view their medical records & doctors can add medical records.
-- **Prescription Management**: Doctors can add prescriptions for patients.
+- **Medical Records**: Users can view their medical records & doctors can add medical records.
+- **Prescription Management**: Healthcare professionals can add prescriptions for patients.
 
 ## Sehtie's tech stack 💻
 
