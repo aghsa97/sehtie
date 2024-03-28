@@ -1,4 +1,5 @@
 import { useSearchParams } from "react-router-dom"
+import { useEffect } from "react"
 
 import Appointments from "@/components/dashboard/appointments"
 import BookAppointment from "@/components/dashboard/patient/book-appointment"
@@ -10,6 +11,14 @@ import Prescriptions from "@/components/dashboard/patient/prescriptions"
 function PatientDashboardPage() {
     const [searchParams,] = useSearchParams()
     const page = searchParams.get('page')
+    const patientId = localStorage.getItem('patientId')
+
+    useEffect(() => {
+        document.title = 'Patient Dashboard - MediConnect'
+        if (!patientId) {
+            window.location.href = '/login'
+        }
+    }, [patientId])
 
     return (
         <div className="w-full max-w-screen-xl mx-auto flex items-start gap-12">
