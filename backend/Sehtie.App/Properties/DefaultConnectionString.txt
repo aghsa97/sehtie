@@ -1,0 +1,1 @@
+"DefaultConnection": "Server = . ;Database = SehiteApp;Trusted_Connection = true ;MultipleActiveResultSets = True;",

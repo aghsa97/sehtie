@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Sehtie.Core.Interfaces;
-using Sehtie.Data;
 using Sehtie.Data.Entities;
 
 namespace Sehtie.App.Controllers
@@ -9,53 +8,46 @@ namespace Sehtie.App.Controllers
     [Route("[controller]")]
     public class DoctorsController : ControllerBase
     {
-        private readonly AppDBContext _dBContext;
         private readonly IDoctorRepository _doctorRepository;
-        private readonly IPatientRepository _patientRepository;
 
-        public DoctorsController(AppDBContext dBContext,IDoctorRepository doctorRepository,IPatientRepository patientRepository)
+        public DoctorsController(IDoctorRepository doctorRepository)
         {
-            _dBContext = dBContext;
             _doctorRepository = doctorRepository;
-            _patientRepository = patientRepository;
         }
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Patient>>> GetAllPatients()
+        public async Task<ActionResult<IEnumerable<Doctor>>> GetAllDoctors()
         {
             
-                var getAllPats = await _patientRepository.GetAllAsync();
-            if (getAllPats == null)
+            var getAllDocs = await _doctorRepository.GetAllAsync();
+            if (getAllDocs == null)
                 return NotFound();
 
-                return Ok(getAllPats);   
+            return Ok(getAllDocs);   
         }
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Patient>> GetPatsById(Patient id)
+
+        [HttpGet("{email}")]
+        public async Task<ActionResult<Doctor>> GetDoctorByEmail(string email)
         {
-            if(id == null )
+            
+            if (email == null)
                 return NotFound();
-            var getpats = await _patientRepository.GetAsync(id);
-            return Ok(getpats);
+
+            var doctor = await _doctorRepository.GetByEmail(email);
+
+            if (doctor == null)
+                return NotFound();
+
+            return Ok(doctor);
         }
 
-        [HttpGet("{name}")]
-        public async Task<ActionResult<Patient>> GetPatsById(string name)
+        [HttpPost]
+        public async Task<ActionResult<Doctor>> AddDoctor(Doctor doctor)
         {
-            if (name == null)
-                return NotFound();
+            if (doctor == null)
+                return BadRequest("Invalid doctor data. Please provide a valid doctor object.");
 
-            var pats = Enumerable.Empty<Patient>();
-            if (string.IsNullOrEmpty(name))
-            {
-                pats = await _patientRepository.GetAllAsync();
-            }
-            else
-            {
-                pats = _patientRepository.SearchByName(name.ToLower());
-            }
-
-            return Ok(pats);
+            await _doctorRepository.Add(doctor);
+            return Ok();
         }
-
     }
 }

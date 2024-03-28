@@ -2,16 +2,39 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { ActivityIcon } from "lucide-react"
+import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 
 
 function LoginPage() {
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
     const navigate = useNavigate()
 
-    function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault()
+        const response = await fetch(`http://localhost:5266/login/${email}`)
+
+        if (!response.ok) {
+            console.log('Invalid email')
+            return
+        }
+        const data = await response.json()
+
+        if (data.passowrd !== password) {
+            console.log('Invalid password')
+            return
+        }
+        if (data.category) {
+            localStorage.setItem('doctorId', data.id)
+            navigate('/dashboard/doctor?page=appointments')
+            return
+        }
+        localStorage.setItem('patientId', data.id)
         navigate('/dashboard/patient?page=medical records')
     }
+
     return (
         <div className="p-12 text-muted">
             <div className="flex flex-col items-start gap-6">
@@ -24,11 +47,17 @@ function LoginPage() {
             <form className="flex flex-col gap-6 mt-6" onSubmit={event => handleSubmit(event)}>
                 <div className="flex flex-col gap-3">
                     <Label htmlFor="email" className="text-sm font-medium">Email</Label>
-                    <Input type="email" id="email" placeholder="Enter your email" className="rounded-full text-zinc-950" />
+                    <Input
+                        value={email}
+                        onChange={event => setEmail(event.target.value)}
+                        type="email" id="email" placeholder="Enter your email" className="rounded-full text-zinc-950" />
                 </div>
                 <div className="flex flex-col gap-3">
                     <Label htmlFor="password" className="text-sm font-medium">Password</Label>
-                    <Input type="password" id="password" placeholder="Enter your password" className="rounded-full text-zinc-950" />
+                    <Input
+                        value={password}
+                        onChange={event => setPassword(event.target.value)}
+                        type="password" id="password" placeholder="Enter your password" className="rounded-full text-zinc-950" />
                 </div>
                 <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">

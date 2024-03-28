@@ -28,11 +28,14 @@ namespace Sehtie.App
             {
                 optionsbuilder.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
-            //builder.Services.AddDbContext<AppIdentityDbContext>(optionsbuilder =>
-            //{
-            //    optionsbuilder.UseSqlServer(builder.Configuration.GetConnectionString("IdentityConnection"));
-            //});
-            //builder.Services.AddAutoMapper(builder => builder.AddProfile(new MappingProfile()));
+            // Add cors
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", policy =>
+                {
+                    policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000");
+                });
+            });
             builder.Services.AddScoped(typeof(IDoctorRepository),typeof( DoctorRepository) );
             builder.Services.AddScoped(typeof(IPatientRepository),typeof( PatientRepository) );
 
@@ -62,6 +65,7 @@ namespace Sehtie.App
 
             app.UseAuthorization();
 
+            app.UseCors("CorsPolicy");
 
             app.MapControllers();
 
